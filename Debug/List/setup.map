@@ -1,0 +1,48 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+tempStr                                                                           0x01BB      16
+mStr                                                                              0x01CB      16
+psw                                                                               0x01DB       4
+str                                                                               0x01DF       6
+stritems                                                                          0x01E5      18
+year                                                                              0x01F7       1
+month                                                                             0x01F8       1
+day                                                                               0x01F9       1
+_base_y                                                                           0x01FA       4
+_lcd_x                                                                            0x01FE       1
+_lcd_y                                                                            0x01FF       1
+_lcd_maxx                                                                         0x0200       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+i                                                                                 R4,R5        2
+j                                                                                 R6,R7        2
+MemAddress                                                                        R8,R9        2
+hour                                                                              R11          1
+min                                                                               R10          1
+sec                                                                               R13          1
+weekDay                                                                           R12          1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+main                                                                              0x000EE    205
+EEPROM_WritePage                                                                  0x001BB     31
+EEPROM_ReadPage                                                                   0x001DA     49
+_lcd_write_nibble_G100                                                            0x0020B     20
+_lcd_write_data                                                                   0x0021F     12
+lcd_gotoxy                                                                        0x0022B     17
+lcd_clear                                                                         0x0023C     14
+lcd_putchar                                                                       0x0024A     32
+lcd_puts                                                                          0x0026A     17
+lcd_init                                                                          0x0027B     46
+strlen                                                                            0x002A9     12
+rtc_set_time                                                                      0x002B5     13
+rtc_set_date                                                                      0x002C2     16
+bin2bcd                                                                           0x002D2     10
